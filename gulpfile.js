@@ -2,15 +2,23 @@ var gulp = require('gulp');
 var mocha = require('gulp-mocha');
 
 gulp.task('test', function() {
+  var error = false;
   gulp.
-    src('test/test.js').
+    src('./test.js').
     pipe(mocha()).
-    on('error', function(err) {
-      this.emit('end');
+    on('error', function() {
+      console.log('Tests failed!');
+      error = true;
+    }).
+    on('end', function() {
+      if (!error) {
+        console.log('Tests succeeded! Enter the below code:\n' +
+          require('fs').readFileSync('./output.dat'));
+        process.exit(0);
+      }
     });
 });
 
 gulp.task('watch', function() {
-  gulp.watch('test/*.js', ['test']);
-  // gulp.watch('test/**', ['test']); tells gulp to watch all files in the test directory and run the 'test' task when one changes.
+  gulp.watch(['./test.js', './interface.js'], ['test']);
 });
