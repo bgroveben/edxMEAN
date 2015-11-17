@@ -12,4 +12,5 @@ gulp.task('test', function() {
 
 gulp.task('watch', function() {
   gulp.watch('test/*.js', ['test']);
+  // gulp.watch('test/**', ['test']); tells gulp to watch all files in the test directory and run the 'test' task when one changes.
 });
