@@ -2,7 +2,7 @@
  *  Inserts "doc" into the collection "movies".
  */
 exports.insert = function(db, doc, callback) {
-  // TODO: implement
+  db.collection('movies').insert(doc);
   callback(null);
 };
 
