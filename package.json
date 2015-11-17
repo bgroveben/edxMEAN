@@ -1,4 +1,8 @@
 {
+  "scripts": {
+    "test": "mocha",
+    "test-kitten": "mocha -R nyan"
+  },
   "dependencies": {
     "kerberos": "0.0.17",
     "mocha": "^2.3.4",
