@@ -36,3 +36,20 @@ mongodb.MongoClient.connect(uri, function(error, db) {
     });
   });
 });
+
+
+// The following is an example of Node concurrency and event loop fundamentals.
+// Which statement will appear first?
+setTimeout(function() {
+  console.log('In timeout!');
+}, 0);  // asynchronous, non-blocking
+console.log('Not in timeout!');  // synchronous, blocking
+// Notice that 'Not in timeout!' printed before 'In timeout!'.
+// This is because setTimeout registers an event handler that is called on the next iteration of the event loop.
+// Also notice that both statements were printed to the console before the results from the database query above.
+
+
+// QUIZ
+// Which of the following commands will print out all documents in the 'test' collection in Node.js?
+// ANSWER
+// console.log(db.collection('sample').find().toArray());
