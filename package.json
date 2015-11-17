@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "kerberos": "0.0.17",
+    "mongodb": "^2.0.35",
+    "underscore": "1.5.2"
+  }
+}
