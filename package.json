@@ -1,12 +1,18 @@
 {
   "scripts": {
     "test": "mocha",
-    "test-kitten": "mocha -R nyan"
+    "test-kitten": "mocha -R nyan",
+    "watch": "gulp watch"
   },
   "dependencies": {
     "kerberos": "0.0.17",
     "mocha": "^2.3.4",
     "mongodb": "^2.0.35",
     "underscore": "1.5.2"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-mocha": "^2.2.0",
+    "mocha": "^2.3.4"
   }
 }
