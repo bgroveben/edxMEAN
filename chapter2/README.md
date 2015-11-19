@@ -17,7 +17,7 @@ schema must have the following fields:
 * `title`: the course's title as a string, such as "Introduction to Computer
 Science". Required, [maximum of 140 characters](http://mongoosejs.com/docs/api.html#schema_string_SchemaString-maxlength).
 * `description`:  a description of the course as a string. Required.
-*  `requirements`: an of course numbers (as strings) representing the courses
+*  `requirements`: an array of course numbers (as strings) representing the courses
 a student should take before taking this course.
 
 Once you have met all of these requirements, `npm run watch` will exit and
