@@ -1,6 +1,6 @@
 {
   "facebookClientId": "FACEBOOK_CLIENT_ID",
-  "facebookClientSecret": "TODO",
-  "stripeKey": "TODO",
-  "openExchangeRatesKey": "TODO"
+  "facebookClientSecret": "FACEBOOK_CLIENT_SECRET",
+  "stripeKey": "STRIPE_API_KEY",
+  "openExchangeRatesKey": "OPEN_EXCHANGE_RATES_KEY"
 }
