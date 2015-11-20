@@ -1,5 +1,5 @@
 {
-  "facebookClientId": "TODO",
+  "facebookClientId": "FACEBOOK_CLIENT_ID",
   "facebookClientSecret": "TODO",
   "stripeKey": "TODO",
   "openExchangeRatesKey": "TODO"
