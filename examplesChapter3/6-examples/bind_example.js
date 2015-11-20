@@ -9,3 +9,9 @@ function test(p1, p2) {
   console.log('p1 = ' + p1);
   console.log('p2 = ' + p2);
 }
+
+test.bind(null, 'Hello, ')('world');
+
+function test(p1, p2) {
+  console.log(p1 + ' ' + p2);
+}
